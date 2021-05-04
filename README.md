@@ -8,10 +8,11 @@ Como funciona:
   
   2 - Um membro da equipe apresenta a tarefa e abre para votação, os outros participantes devem escolher uma carta sem apresentar aos demais.
   
-  3 - Após todos os membros fazerem suas escolhas, as cartas são reveladas simultaneamente. Cada membro do time deve justificar a sua escolha, caso não haja um acordo, vota-se novamente até todos concordarem com um tamamho.
+  3 - Após todos os membros fazerem suas escolhas, as cartas são reveladas simultaneamente. Cada membro do time deve justificar a sua escolha, caso não haja um acordo, vota-se novamente até todos concordarem com um tamanho.
 
 ## Técnologias Utilizadas
-- DotNet Core
+- .NET Core 3.1
+    Framework open-source voltado para o desenvolvimento web, possibilitando reutilização e reaproveitamento de código.
 - Html
 - Javascript
 - React
