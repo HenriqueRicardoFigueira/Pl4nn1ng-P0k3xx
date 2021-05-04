@@ -13,8 +13,9 @@ Como funciona:
 ## Técnologias Utilizadas
 - .NET Core 3.1  
     Framework open-source voltado para o desenvolvimento web, possibilitando reutilização e reaproveitamento de código.
-- Html
-- Javascript
+- Javascript  
+    Linguagem de programação, interpretada, utilizada no lado do cliente e geralmente executada no navegador.
+- SignalR
 - React
 
 
