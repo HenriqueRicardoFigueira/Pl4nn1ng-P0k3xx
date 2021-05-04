@@ -11,8 +11,11 @@ Como funciona:
   3 - Após todos os membros fazerem suas escolhas, as cartas são reveladas simultaneamente. Cada membro do time deve justificar a sua escolha, caso não haja um acordo, vota-se novamente até todos concordarem com um tamanho.
 
 ## Técnologias Utilizadas
-- .NET Core 3.1
+- .NET Core 3.1  
     Framework open-source voltado para o desenvolvimento web, possibilitando reutilização e reaproveitamento de código.
 - Html
 - Javascript
 - React
+
+
+![alt text](https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/Arquitetura_Pl4nn1ng.jpg?raw=true)
