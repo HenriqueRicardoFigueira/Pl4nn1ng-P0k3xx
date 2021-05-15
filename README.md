@@ -12,11 +12,22 @@ Como funciona:
 
 ## Técnologias Utilizadas
 - .NET Core 3.1  
-    Framework open-source voltado para o desenvolvimento web, possibilitando reutilização e reaproveitamento de código.
+    O .NET (dotNet) é uma plataforma open-source voltada para o desenvolvimento web, criada pela Microsoft, que possibilita reutilização e reaproveitamento de código. Esta plataforma possui uma ideia semelhante a do Java onde o programador pode desenvolver para qualquer sistema que suporte o .NET, ela composta por uma máquina virtual, um compilador e uma biblioteca padrão. Também permite uma comunicação transparente entre diversas linguagens pois utiliza a CLR (Commn Language Runtime) que é um componente da máquina virtual onde realiza a gerencia da execução dos programas e formnece alguns serviços como garbage collection, gerenciamento de thread e gerenciamento de memória.
+    
 - Javascript  
-    Linguagem de programação, interpretada, utilizada no lado do cliente e geralmente executada no navegador.
+  Segundo seus criadores, a Mozilla Fundation o "JavaScript é uma linguagem de programação, leve, interpretada, orientada a objetos, baseada em protótipos e em firs class functions (funções de primeira classe), mais conhecida como a linguagem de script da internet."
 - SignalR
+  O SignalE é uma biblioteca open-source, desenvolvida por funcinários da Microsoft.
 - React
 
 
 ![alt text](https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/Arquitetura_Pl4nn1ng.jpg?raw=true)
+
+Referências:
+
+- https://docs.microsoft.com/pt-br/dotnet/framework/get-started/
+- https://docs.microsoft.com/pt-br/dotnet/framework/get-started/overview
+- https://pt.wikipedia.org/wiki/.NET_Framework
+- https://pt.wikipedia.org/wiki/Common_Language_Runtime
+- https://www.techtudo.com.br/tudo-sobre/net-framework.html
+- https://www.alura.com.br/artigos/o-que-e-net
