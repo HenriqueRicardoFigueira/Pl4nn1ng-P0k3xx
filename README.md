@@ -21,7 +21,7 @@ Como funciona:
 - Javascript  
   Segundo seus criadores, a Mozilla Fundation o "JavaScript é uma linguagem de programação, leve, interpretada, orientada a objetos, baseada em protótipos e em firs class functions (funções de primeira classe), mais conhecida como a linguagem de script da internet."
  
-- SignalR
+- SignalR 
   O SignalR é uma biblioteca open-source, desenvolvida por funcionários da Microsoft, que foi incorporado pela plataforma .NET. Ele auxilia e facilita a implementação de funcionalidades de tempo real com uma API que fornece serviços chamada de procedimento remoto (RPC), gerenciamento de conexão e agrupamento de conexões. Funciona com uma biblioteca no lado do Servidor(ASP.NET) e um Cliente (Javascript) utilizando uma conexão persistente que difere da conexão HTTP clássica, que possibilita transmitir mensagens a todos os clientes ao mesmo tempo e múltiplas conexões de clientes.
   A implementação do SignalR é uma abstração de meios necessários para realizar conexões cliente servidor, ela gerencia a escolha do tipo de transporte a ser utilizado, definindo por padrão o WebSocket mas podendo escolher entre Long Polling, Server Sent Events e Forever Frame. Também dois tipos de criar conexões os Hubs que permite transmitir diversos tipos de mensagem entre o cliente e o servidor sem a necessidade de criação de rotas e a PersistentConnection que expõem um serviço de broadcast HTTP.
  
@@ -32,7 +32,7 @@ Como funciona:
 
 ![alt text](https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/Arquitetura_Pl4nn1ng.jpg?raw=true)
 
-###Referências:
+### Referências:
 
 - https://docs.microsoft.com/pt-br/dotnet/framework/get-started/
 - https://docs.microsoft.com/pt-br/dotnet/framework/get-started/overview
