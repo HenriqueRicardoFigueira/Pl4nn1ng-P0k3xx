@@ -14,23 +14,24 @@ Como funciona:
 - .NET Core 3.1  
     O .NET (dotNet) é uma plataforma open-source voltada para o desenvolvimento web, criada pela Microsoft, que possibilita reutilização e reaproveitamento de código. Esta plataforma possui uma ideia semelhante à do Java onde o programador pode desenvolver para qualquer sistema que suporte o .NET, ela é composta por uma máquina virtual, um compilador e uma biblioteca padrão. Também permite uma comunicação transparente entre diversas linguagens pois utiliza a CLR (Commn Language Runtime) que é um componente da máquina virtual onde realiza a gerência da execução dos programas e fornece alguns serviços como garbage collection, gerenciamento de thread e gerenciamento de memória.
     
-    
-- Asp.Net
- 
-    
 - Javascript  
-  Segundo seus criadores, a Mozilla Fundation o "JavaScript é uma linguagem de programação, leve, interpretada, orientada a objetos, baseada em protótipos e em firs class functions (funções de primeira classe), mais conhecida como a linguagem de script da internet."
+  Segundo seus criadores, o "JavaScript é uma linguagem de programação, leve, interpretada, orientada a objetos, baseada em protótipos e em firs class functions (funções de primeira classe), mais conhecida como a linguagem de script da internet.".
  
-- SignalR 
+- SignalR  
   O SignalR é uma biblioteca open-source, desenvolvida por funcionários da Microsoft, que foi incorporado pela plataforma .NET. Ele auxilia e facilita a implementação de funcionalidades de tempo real com uma API que fornece serviços chamada de procedimento remoto (RPC), gerenciamento de conexão e agrupamento de conexões. Funciona com uma biblioteca no lado do Servidor(ASP.NET) e um Cliente (Javascript) utilizando uma conexão persistente que difere da conexão HTTP clássica, que possibilita transmitir mensagens a todos os clientes ao mesmo tempo e múltiplas conexões de clientes.
-  A implementação do SignalR é uma abstração de meios necessários para realizar conexões cliente servidor, ela gerencia a escolha do tipo de transporte a ser utilizado, definindo por padrão o WebSocket mas podendo escolher entre Long Polling, Server Sent Events e Forever Frame. Também dois tipos de criar conexões os Hubs que permite transmitir diversos tipos de mensagem entre o cliente e o servidor sem a necessidade de criação de rotas e a PersistentConnection que expõem um serviço de broadcast HTTP.
- 
+  A implementação do SignalR é uma abstração de meios necessários para realizar conexões cliente servidor, ela gerencia a escolha do tipo de transporte a ser utilizado, definindo por padrão o WebSocket mas podendo escolher entre Long Polling, Server Sent Events e Forever Frame. Também dois tipos de criar conexões os Hubs que permite transmitir diversos tipos de mensagem entre o cliente e o servidor sem a necessidade de criação de rotas e a PersistentConnection que expõem um serviço de broadcast HTTP. Abaixo temos a representção da arquitetura SignalR, retirada da sua documentação.
 
+ <p align="center">
+  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/image5.png?raw=true" />
+</p>
 
-- React
+- React   
+  O React é uma biblioteca Javascript open-source, criada pelo Facebook, utilizada para construir interfaces de usuário baseada em componentes reutilizaveis.
 
 ### Arquitetura Pl4nn1ng P0k3xx
-![alt text](https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/Arquitetura_Pl4nn1ng.jpg?raw=true)
+<p align="center">
+  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/Arquitetura_Pl4nn1ng.jpg?raw=true)" />
+</p>
 
 ### Referências:
 
@@ -44,3 +45,4 @@ Como funciona:
 - http://www.macoratti.net/13/03/net_sign1.htm
 - https://docs.microsoft.com/pt-br/aspnet/signalr/overview/getting-started/introduction-to-signalr
 - https://docs.microsoft.com/pt-br/aspnet/signalr/overview/security/
+- https://github.com/facebook/react
