@@ -29,7 +29,7 @@ Como funciona:
 
 - React
 
-
+### Arquitetura Pl4nn1ng P0k3xx
 ![alt text](https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/Arquitetura_Pl4nn1ng.jpg?raw=true)
 
 ### Referências:
