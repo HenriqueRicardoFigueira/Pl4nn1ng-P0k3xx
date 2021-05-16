@@ -22,7 +22,7 @@ Como funciona:
   A implementação do SignalR é uma abstração de meios necessários para realizar conexões cliente servidor, ela gerencia a escolha do tipo de transporte a ser utilizado, definindo por padrão o WebSocket mas podendo escolher entre Long Polling, Server Sent Events e Forever Frame. Também dois tipos de criar conexões os Hubs que permite transmitir diversos tipos de mensagem entre o cliente e o servidor sem a necessidade de criação de rotas e a PersistentConnection que expõem um serviço de broadcast HTTP. Abaixo temos a representção da arquitetura SignalR, retirada da sua documentação.
 
  <p align="center">
-  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/image5.png?raw=true" />
+  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/documentacao/image5.png?raw=true" />
 </p>
 
 - React   
@@ -30,7 +30,7 @@ Como funciona:
 
 ### Arquitetura Pl4nn1ng P0k3xx
 <p align="center">
-  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/Arquitetura_Pl4nn1ng.jpg?raw=true)" />
+  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/documentacao/Arquitetura_Pl4nn1ng.jpg?raw=true)" />
 </p>
 
 ### Referências:
