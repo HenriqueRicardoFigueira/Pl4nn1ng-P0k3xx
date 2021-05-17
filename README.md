@@ -29,10 +29,17 @@ Como funciona:
   O React é uma biblioteca Javascript open-source, criada pelo Facebook, utilizada para construir interfaces de usuário baseada em componentes reutilizaveis.
 
 ### Arquitetura Pl4nn1ng P0k3xx    
+
 <p align="center">
   <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/documentacao/arquitetura.jpg?raw=true)" />
 </p>
 
+O fluxo consiste em:
+
+- **1**:  Um "jogador" cria uma sala torna-se o administrador, posteriormente envia o nome da sala para outros "jogares" que entram na mesma.
+- **2**:  Os "jogadores" escolhem um tamanho para a tarefa (combinada posteriormente).
+- **3**:  Administrador revela o votos de todos os jogadores.
+  
 ### Interface Pl4nn1ng P0k3xx   
 
 
