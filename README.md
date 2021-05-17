@@ -30,7 +30,7 @@ Como funciona:
 
 ### Arquitetura Pl4nn1ng P0k3xx
 <p align="center">
-  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/documentacao/Arquitetura_Pl4nn1ng.jpg?raw=true)" />
+  <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/documentacao/arquitetura.jpg?raw=true)" />
 </p>
 
 ### Referências:
