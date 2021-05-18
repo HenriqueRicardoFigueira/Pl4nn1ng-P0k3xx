@@ -48,6 +48,18 @@ O fluxo consiste em:
   <img src="https://github.com/HenriqueRicardoFigueira/Pl4nn1ng-P0k3xx/blob/main/documentacao/interface.png?raw=true)" />
 </p>
 
+ - **AddBoar**: Função para adicionar uma "mesa" de planning para jogadores, recebe uma instancia do objeto Planning. Retorno boleano representando sucesso ou fracasso na adição.
+ 
+ - **AddUserToBoard**: Função responsável por adicionar usário a "mesa", recebe um Id único do tipo GUID que é o identificador da "mesa" e uma instancia do usuário. Retorno boleado para representar sucesso ou fracasso na ação.
+ 
+ - **GetUsersFromBoard**: Função que retorna a lista de usuários presentes em uma "mesa", recebe como parâmetro um Id único do tipo GUID que é o identificador da "mesa". 
+ 
+ - **ClearUserPoint**: Função responsável por zerar os votos dos usuários a cada votação, recebe como parâmetro um Id único do tipo GUID que é o identificador da "mesa" e retorna um boleano representando o sucesso ou fracasso.
+
+- **TooglePoints**: Função responsável por exibir os votos para todos os usuários, recebe como parâmetro um ID único do tipo GUID que é o identificador da "mesa" e o state do tipo boleano que representa se é ou não para mostrar os votos.
+
+Ainda não possui mensagens de erros porém serão implementadas na próxima versão.
+
 ### Instruções de Uso
   Pré-requisitos:
   ```
