@@ -64,8 +64,8 @@ Ainda não possui mensagens de erros porém serão implementadas na próxima ver
   Pré-requisitos:
   ```
   .NET 3.1
-  Node Js
-  React Js
+  Node Js Latest LTS Version: 14.17.0
+  React Js Lastest LTS Version
   ```
   Utilização:
   ```
