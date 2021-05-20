@@ -75,13 +75,15 @@ namespace Pl4nn1ng_P0k3xx.Controllers
             return NotFound();
         }
 
-        [HttpGet("boards/{boardId}/users")]
+        [HttpGet("boards/users")]
         public async Task<IActionResult> GetUsers(Guid boardId)
         {
             var users = await planningRepository.GetUsersFromBoard(boardId);
-
+          
             return Ok(users);
         }
+       
+    
     }
 
    

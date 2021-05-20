@@ -81,5 +81,11 @@ namespace Pl4nn1ng_P0k3xx
 
             return await AddBoard(board);
         }
+
+        public async Task<bool> teste()
+        {
+            var t = true;
+            return t;
+        }
     }
 }

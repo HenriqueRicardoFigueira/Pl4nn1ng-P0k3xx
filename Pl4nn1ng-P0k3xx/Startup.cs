@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using Pl4nn1ng_P0k3xx.Data;
 using Pl4nn1ng_P0k3xx.Hubs;
 using StackExchange.Redis;
 
@@ -32,7 +33,7 @@ namespace Pl4nn1ng_P0k3xx
                         .AllowCredentials()));
 
             services.AddSignalR();
-            services.AddTransient<PlanningRepository, PlanningRepository>();
+            services.AddTransient<IPlanningRepository, PlanningRepository>();
             services.Configure<PlanningSettings>(Configuration);
             services.AddSingleton<ConnectionMultiplexer>(sp =>
             {
