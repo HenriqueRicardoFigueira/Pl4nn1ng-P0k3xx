@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Pl4nn1ng_P0k3xx.Hubs;
+using StackExchange.Redis;
 
 namespace Pl4nn1ng_P0k3xx
 {
@@ -20,15 +21,7 @@ namespace Pl4nn1ng_P0k3xx
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllersWithViews();
-            services.AddSignalR();
-
-            // In production, the React files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "ClientApp/build";
-            });
+            services.AddControllers();
 
             services.AddCors(options =>
                 options.AddPolicy("CorsPolicy",
@@ -37,6 +30,19 @@ namespace Pl4nn1ng_P0k3xx
                         .AllowAnyHeader()
                         .WithOrigins("http://localhost:3000")
                         .AllowCredentials()));
+
+            services.AddSignalR();
+            services.AddTransient<PlanningRepository, PlanningRepository>();
+            services.Configure<PlanningSettings>(Configuration);
+            services.AddSingleton<ConnectionMultiplexer>(sp =>
+            {
+                var settings = sp.GetRequiredService<IOptions<PlanningSettings>>().Value;
+                var configuration = ConfigurationOptions.Parse(settings.ConnectionString, true);
+
+                configuration.ResolveDns = true;
+
+                return ConnectionMultiplexer.Connect(configuration);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,36 +52,18 @@ namespace Pl4nn1ng_P0k3xx
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-
+            app.UseCors("CorsPolicy");
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
-            app.UseSpaStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<PlanningPokerHub>("/planningPoker");// Register Hub class
+                endpoints.MapHub<PlanningPokerHub>("/planningPoker");
             });
-
-            app.UseSpa(spa =>
-            {
-                spa.Options.SourcePath = "ClientApp";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start");
-                }
-            });
-
-            app.UseCors("CorsPolicy");
         }
     }
 }
