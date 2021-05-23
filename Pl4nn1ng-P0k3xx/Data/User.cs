@@ -6,6 +6,8 @@ namespace Pl4nn1ng_P0k3xx.Data
     {
         public Guid UserId { get; set; }
 
+        public Guid BoardId { get; set; }
+
         public string Name { get; set; }
 
         public int Point { get; set; }

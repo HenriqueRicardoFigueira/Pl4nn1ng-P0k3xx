@@ -2,6 +2,7 @@
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -34,6 +35,19 @@ namespace Pl4nn1ng_P0k3xx
 
             var board = JsonSerializer.Deserialize<Planning>(data);
             board.Users.Add(user);
+
+            return await AddBoard(board);
+        }
+        
+        public async Task<bool> UpdateUserPoint(Guid boardId, Guid userId, int point)
+        {
+            var data = await database.StringGetAsync(boardId.ToString());
+            var board = JsonSerializer.Deserialize<Planning>(data);
+            var user = board.Users.FirstOrDefault(u => u.UserId == userId);
+            if (user != null)
+            {
+                user.Point = point;
+            }
 
             return await AddBoard(board);
         }

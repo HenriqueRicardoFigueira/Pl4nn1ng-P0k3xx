@@ -13,6 +13,8 @@ namespace Pl4nn1ng_P0k3xx.Data
 
         Task<List<User>> GetUsersFromBoard(Guid boardId);
 
+        Task<bool> UpdateUserPoint(Guid boardId, Guid userId, int point);
+
         Task<bool> ClearUsersPoint(Guid boardId);
 
         Task<bool> TogglePoints(Guid boardId, bool state);
